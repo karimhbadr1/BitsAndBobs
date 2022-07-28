@@ -15,3 +15,5 @@ data<-data %>%
   rowwise() %>% 
   mutate(g=if_else(sum(c_across(a:b),na.rm = TRUE)>0,TRUE,FALSE)) %>% 
   ungroup()
+
+#comment
